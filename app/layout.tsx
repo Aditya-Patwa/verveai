@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={roboto_slab.className + " w-screen overflow-x-hidden"}>{children}</body>
     </html>
   );

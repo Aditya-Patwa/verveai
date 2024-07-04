@@ -97,6 +97,78 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <section className="w-screen bg-black py-24">
+        <div className="text-center text-zinc-100 text-5xl sm:text-6xl">
+          <h1 className={abril_fatface.className}>Pricing</h1>
+        </div>
+
+        
+
+        <div className="mt-20 px-[9vw] sm:px-24 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-3 cursor-pointer border border-zinc-500 my-4 bg-slate-50 px-6">
+            <div className="py-4">
+              <h1 className="text-zinc-900 font-bold text-xl">Basic</h1>
+            </div>
+
+            <div className="py-4">
+              <h1 className={abril_fatface.className + " text-6xl"}>$5<span className="font-bold text-4xl">/month</span></h1>
+              {/* <h2 className="py-2 font-bold text-xl">
+                +$0.075 for every new response.
+              </h2> */}
+            </div>
+
+
+            <div className="p-4">
+              <ul>
+                <li className="list-disc">
+                  <h3>
+                    10 text articles generation upto 500 words each.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    10 audio file manipulation.
+                  </h3>
+                </li>
+              </ul>
+            </div>
+          </div> 
+
+          <div className="p-3 cursor-pointer border bg-blue-500 border-blue-500 px-6">
+            <div className="py-4">
+              <h1 className="text-zinc-900 font-bold text-2xl">Professional</h1>
+            </div>
+            <div className="py-4">
+              <h1 className={abril_fatface.className + " text-6xl"}>$10<span className="font-bold text-4xl">/month</span></h1>
+              {/* <h2 className="py-2 font-bold text-xl">
+                +$0.065 for every new response.
+              </h2> */}
+            </div>
+          </div> 
+
+          <div className="p-3 cursor-pointer bg-rose-400 my-4 px-6">
+            <div className="py-4">
+              <h1 className="text-zinc-900 font-bold text-xl">Enterprice</h1>
+            </div>
+            <div className="py-4">
+              <h1 className={abril_fatface.className + " text-6xl"}>$20<span className="font-bold text-4xl">/month</span></h1>
+              {/* <h2 className="py-2 font-bold text-xl">
+                +$0.05 for every new response.
+              </h2> */}
+            </div>
+          </div> 
+
+          <div className="p-3 cursor-pointer bg-emerald-300 my-4 px-6 mt-10 md:col-start-2">
+            <div className="py-4">
+              <h1 className="text-zinc-900 font-bold text-xl">Free Trial</h1>
+            </div>
+            <div className="py-4">
+              <h1 className={abril_fatface.className + " text-6xl"}>$0<span className="font-bold text-4xl">/month</span></h1>
+            </div>
+          </div> 
+        </div>
+      </section>
     </>
   );
 }
