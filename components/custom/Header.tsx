@@ -72,19 +72,45 @@ export default function Header() {
                             </SheetDescription>
                         </SheetHeader>
 
-                        <SheetFooter>
-                            <Link href="/login">
-                                Login
-                            </Link>
-                            
-                            <Link href="/login" className="px-3 py-2 bg-black text-white">
-                                Create Account
-                            </Link>
-                        </SheetFooter>
-                </SheetContent>
-            </Sheet>
+                        <ul className="py-4 px-2">
+                            <li className="py-2 border-b">
+                                <Link href="/">
+                                    Home
+                                </Link>
+                            </li>
+                            <li className="py-2  border-b">
+                                <Link href="/">
+                                    Blogs
+                                </Link>
+                            </li>
+                            <li className="py-2 border-b">
+                                <Link href="/">
+                                    Products
+                                </Link>
+                            </li>
+                            <li className="py-2 border-">
+                                <Link href="/">
+                                    Pricing
+                                </Link>
+                            </li>
+                        </ul>
 
-        </div>
+                        <SheetFooter className="my-5">
+                            <div className="p-2">
+                                <Link href="/login">
+                                    Login
+                                </Link>
+                            </div>
+                            <div className="p-2">
+                                <Link href="/login" className="px-3 py-2 bg-black text-white">
+                                    Create Account
+                                </Link>
+                            </div>
+                        </SheetFooter>
+                    </SheetContent>
+                </Sheet>
+
+            </div>
         </header >
     );
 }
