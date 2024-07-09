@@ -288,7 +288,7 @@ export default function Home() {
             </Link>
           </h1>
           <p className="py-4 text-zinc-400">
-            The All-in-one AI suite for creators, offering tools for writing, audio/video editing, captioning, and even multilingual translation. Focus on your vision,we'll handle the tech.
+            The All-in-one AI suite for creators, offering tools for writing, audio/video editing, captioning, and even multilingual translation. Focus on your vision,we&apos;ll handle the tech.
           </p>
         </div>
         <div className="mt-8 md:mt-0 md:col-span-2 grid grid-cols-2 sm:grid-cols-2 gap-2 px-4">
