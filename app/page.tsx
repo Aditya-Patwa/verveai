@@ -1,5 +1,6 @@
 import Header, { playfair_display } from "@/components/custom/Header";
 import { abril_fatface } from "@/components/custom/Header";
+import Usage from "@/components/custom/Usage";
 
 export default function Home() {
   return (
@@ -16,8 +17,7 @@ export default function Home() {
             </span>
           </h1>
           <h3 className={playfair_display.className + " mt-5 font-bold text-center text-xl md:text-3xl text-slate-400"}>
-            Empower your <span className="text-slate-200">vision</span>. Ignite your <span
-              className="text-slate-200">potential</span>.
+            The <span className="text-slate-200">all-in-one AI</span> suite for creators
           </h3>
         </div>
         <div className="absolute grid place-content-center inset-x-0 bottom-[10vh] animate-bounce">
@@ -106,67 +106,78 @@ export default function Home() {
         
 
         <div className="mt-20 px-[9vw] sm:px-24 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-3 cursor-pointer border border-zinc-500 my-4 bg-slate-50 px-6">
+          <div className="p-3 cursor-pointer border text-zinc-900 border-zinc-500 my-4 bg-slate-50 px-6">
             <div className="py-4">
-              <h1 className="text-zinc-900 font-bold text-xl">Basic</h1>
+              <h1 className="text-zinc-900 font-bold text-xl">Silver</h1>
             </div>
 
             <div className="py-4">
-              <h1 className={abril_fatface.className + " text-6xl"}>$5<span className="font-bold text-4xl">/month</span></h1>
-              {/* <h2 className="py-2 font-bold text-xl">
-                +$0.075 for every new response.
-              </h2> */}
+              <h1 className={abril_fatface.className + " text-6xl"}>$5<span className="text-2xl">/month</span></h1>
             </div>
 
 
-            <div className="p-4">
+            {/* <div className="p-4">
               <ul>
                 <li className="list-disc">
                   <h3>
-                    10 text articles generation upto 500 words each.
+                    1 Space
                   </h3>
                 </li>
                 <li className="list-disc">
                   <h3>
-                    10 audio file manipulation.
+                    3 article generation upto 500 words each
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    60 minutes of video captioning
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    10 minutes of video translation
                   </h3>
                 </li>
               </ul>
+            </div> */}
+          </div> 
+
+          <div className="p-3 cursor-pointer text-zinc-900 border bg-blue-500 border-blue-500 px-6">
+            <div className="py-4">
+              <h1 className="text-zinc-900 font-bold text-2xl">Gold</h1>
+            </div>
+            <div className="py-4">
+              <h1 className={abril_fatface.className + " text-6xl"}>$10<span className="text-2xl">/month</span></h1>
             </div>
           </div> 
 
-          <div className="p-3 cursor-pointer border bg-blue-500 border-blue-500 px-6">
+          <div className="p-3 cursor-pointer text-zinc-900 bg-rose-400 my-4 px-6">
             <div className="py-4">
-              <h1 className="text-zinc-900 font-bold text-2xl">Professional</h1>
+              <h1 className="text-zinc-900 font-bold text-xl">Platinum</h1>
             </div>
             <div className="py-4">
-              <h1 className={abril_fatface.className + " text-6xl"}>$10<span className="font-bold text-4xl">/month</span></h1>
-              {/* <h2 className="py-2 font-bold text-xl">
-                +$0.065 for every new response.
-              </h2> */}
+              <h1 className={abril_fatface.className + " text-6xl"}>$20<span className="text-2xl">/month</span></h1>
             </div>
           </div> 
 
-          <div className="p-3 cursor-pointer bg-rose-400 my-4 px-6">
-            <div className="py-4">
-              <h1 className="text-zinc-900 font-bold text-xl">Enterprice</h1>
-            </div>
-            <div className="py-4">
-              <h1 className={abril_fatface.className + " text-6xl"}>$20<span className="font-bold text-4xl">/month</span></h1>
-              {/* <h2 className="py-2 font-bold text-xl">
-                +$0.05 for every new response.
-              </h2> */}
-            </div>
-          </div> 
-
-          <div className="p-3 cursor-pointer bg-emerald-300 my-4 px-6 mt-10 md:col-start-2">
+          <div className="p-3 cursor-pointer bg-emerald-300 text-zinc-900 my-4 px-6 mt-10 md:col-start-2">
             <div className="py-4">
               <h1 className="text-zinc-900 font-bold text-xl">Free Trial</h1>
             </div>
             <div className="py-4">
-              <h1 className={abril_fatface.className + " text-6xl"}>$0<span className="font-bold text-4xl">/month</span></h1>
+              <h1 className={abril_fatface.className + " text-6xl"}>Free</h1>
+              <h2 className="py-2 font-bold text-xl">
+                Free 5 credits 
+              </h2>
             </div>
           </div> 
+        </div>
+        <div className="text-center text-zinc-100 text-5xl sm:text-6xl py-10 pt-24">
+          <h1 className={abril_fatface.className}>Usage</h1>
+        </div>
+
+        <div className="pt-4 grid place-content-center">
+          <Usage></Usage>
         </div>
       </section>
     </>

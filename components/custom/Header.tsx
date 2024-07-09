@@ -102,7 +102,7 @@ export default function Header() {
                                 </Link>
                             </div>
                             <div className="p-2">
-                                <Link href="/login" className="px-3 py-2 bg-black text-white">
+                                <Link href="/login" className="px-3 py-2 bg-white text-black">
                                     Create Account
                                 </Link>
                             </div>
