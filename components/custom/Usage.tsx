@@ -44,7 +44,7 @@ const features = [
   {
     task: "Video Dubbing",
     free: <X />,
-    silver: <Check />,
+    silver: <X />,
     gold: <Check />,
     platinum: <Check />
   }
@@ -89,9 +89,9 @@ export default function Usage() {
         <TableRow>
           <TableHead className="w-[200px]">Tasks</TableHead>
           <TableHead className="text-right">Free</TableHead>
+          <TableHead className="text-right">Bronze</TableHead>
           <TableHead className="text-right">Silver</TableHead>
           <TableHead className="text-right">Gold</TableHead>
-          <TableHead className="text-right">Platinum</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>

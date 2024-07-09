@@ -1,6 +1,9 @@
 import Header, { playfair_display } from "@/components/custom/Header";
 import { abril_fatface } from "@/components/custom/Header";
 import Usage from "@/components/custom/Usage";
+import FAQs from "@/components/custom/FAQs";
+import { Github, Mail, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -103,12 +106,12 @@ export default function Home() {
           <h1 className={abril_fatface.className}>Pricing</h1>
         </div>
 
-        
+
 
         <div className="mt-20 px-[9vw] sm:px-24 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-3 cursor-pointer border text-zinc-900 border-zinc-500 my-4 bg-slate-50 px-6">
             <div className="py-4">
-              <h1 className="text-zinc-900 font-bold text-xl">Silver</h1>
+              <h1 className="text-zinc-900 font-bold text-xl">Bronze</h1>
             </div>
 
             <div className="py-4">
@@ -116,49 +119,119 @@ export default function Home() {
             </div>
 
 
-            {/* <div className="p-4">
+            <div className="p-4">
               <ul>
                 <li className="list-disc">
                   <h3>
-                    1 Space
+                    1 Space.
                   </h3>
                 </li>
                 <li className="list-disc">
                   <h3>
-                    3 article generation upto 500 words each
+                    30 Article generations upto 5000 words each.
                   </h3>
                 </li>
                 <li className="list-disc">
                   <h3>
-                    60 minutes of video captioning
+                    Video Manipulation upto 5 videos.
                   </h3>
                 </li>
                 <li className="list-disc">
                   <h3>
-                    10 minutes of video translation
+                    Up to 10 minutes of video limit.
                   </h3>
                 </li>
               </ul>
-            </div> */}
-          </div> 
+            </div>
+          </div>
 
           <div className="p-3 cursor-pointer text-zinc-900 border bg-blue-500 border-blue-500 px-6">
             <div className="py-4">
-              <h1 className="text-zinc-900 font-bold text-2xl">Gold</h1>
+              <h1 className="text-zinc-900 font-bold text-2xl">Silver</h1>
             </div>
             <div className="py-4">
               <h1 className={abril_fatface.className + " text-6xl"}>$10<span className="text-2xl">/month</span></h1>
             </div>
-          </div> 
+
+            <div className="p-4">
+              <ul>
+                <li className="list-disc">
+                  <h3>
+                    Everything in Broze Plan + 
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    3 Spaces.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    50 Article generations.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Unlimited article length.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Video Manipulation upto 10 videos.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Up to 30 minutes of video limit.
+                  </h3>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div className="p-3 cursor-pointer text-zinc-900 bg-rose-400 my-4 px-6">
             <div className="py-4">
-              <h1 className="text-zinc-900 font-bold text-xl">Platinum</h1>
+              <h1 className="text-zinc-900 font-bold text-xl">Gold</h1>
             </div>
             <div className="py-4">
               <h1 className={abril_fatface.className + " text-6xl"}>$20<span className="text-2xl">/month</span></h1>
             </div>
-          </div> 
+
+            <div className="p-4">
+              <ul>
+                <li className="list-disc">
+                  <h3>
+                    Everything in Silver Plan + 
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Unlimited Spaces.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Unlimited Article generations.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Unlimited article length.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Unlimited Video Manipulation.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    No time limit for video.
+                  </h3>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div className="p-3 cursor-pointer bg-emerald-300 text-zinc-900 my-4 px-6 mt-10 md:col-start-2">
             <div className="py-4">
@@ -166,11 +239,33 @@ export default function Home() {
             </div>
             <div className="py-4">
               <h1 className={abril_fatface.className + " text-6xl"}>Free</h1>
-              <h2 className="py-2 font-bold text-xl">
-                Free 5 credits 
-              </h2>
             </div>
-          </div> 
+
+            <div className="p-4">
+              <ul>
+                <li className="list-disc">
+                  <h3>
+                    1 Space.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    10 Article generations upto 500 words each.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Video Manipulation upto 1 video.
+                  </h3>
+                </li>
+                <li className="list-disc">
+                  <h3>
+                    Up to 2 minutes of video limit.
+                  </h3>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="text-center text-zinc-100 text-5xl sm:text-6xl py-10 pt-24">
           <h1 className={abril_fatface.className}>Usage</h1>
@@ -180,6 +275,109 @@ export default function Home() {
           <Usage></Usage>
         </div>
       </section>
+
+      <div className="py-18 bg-zinc-950 grid place-content-center">
+        <FAQs />
+      </div>
+
+      <footer className="bg-black py-20 px-8 grid grid-cols-1 md:grid-cols-3">
+        <div className="md:px-8">
+          <h1 className="text-xl font-bold">
+            <Link href="/">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-violet-500 to-rose-500">VerveAI</span>
+            </Link>
+          </h1>
+          <p className="py-4 text-zinc-400">
+            The All-in-one AI suite for creators, offering tools for writing, audio/video editing, captioning, and even multilingual translation. Focus on your vision,we'll handle the tech.
+          </p>
+        </div>
+        <div className="mt-8 md:mt-0 md:col-span-2 grid grid-cols-2 sm:grid-cols-2 gap-2 px-4">
+          <div className="grid md:justify-center">
+            <div className="py-2">
+              <h1>
+                Products
+              </h1>
+            </div>
+            <div className="text-sm">
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Content Writing
+                </Link>
+              </div>
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Audio Manipulation
+                </Link>
+              </div>
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Audio Transcription
+                </Link>
+              </div>
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Video Manipulation
+                </Link>
+              </div>
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Video Dubbing
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="grid justify-start px-6">
+            <div className="py-2">
+              <h1>
+                Company
+              </h1>
+            </div>
+            <div className="text-sm">
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Blogs
+                </Link>
+              </div>
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Resources
+                </Link>
+              </div>
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Privacy Policy
+                </Link>
+              </div>
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Terms of Use
+                </Link>
+              </div>
+              <div className="py-1">
+                <Link href="/" className="text-zinc-400 hover:text-zinc-300">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div className="bg-black py-10 flex space-x-5 justify-center text-white">
+        <Link href="https://x.com/AdityaPatwa07/" target="_blank" className="text-xs hover:underline underline-offset-4 font-extrabold" prefetch={false}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-twitter-x w-6 h-6" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg>
+        </Link>
+        <Link href="https://github.com/Aditya-Patwa/" target="_blank" className="text-xs hover:underline underline-offset-4 font-extrabold" prefetch={false}>
+          <Github className="w-6 h-6" />
+        </Link>
+        <Link href="https://linkedin.com/in/adityapatwa07/" target="_blank" className="text-xs hover:underline underline-offset-4 font-extrabold" prefetch={false}>
+          <Linkedin className="w-6 h-6" />
+        </Link>
+        <Link href="mailto:adityapatwa.tech@gmail.com" className="text-xs hover:underline underline-offset-4" prefetch={false}>
+          <Mail className="w-6 h-6" />
+        </Link>
+      </div>
     </>
   );
 }
